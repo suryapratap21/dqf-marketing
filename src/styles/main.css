@@ -1,0 +1,2 @@
+/* Re-import all styles from the landing-reference template */
+@import '../../../landing-reference/src/styles/main.css';

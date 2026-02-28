@@ -1,0 +1,180 @@
+<!-- =========================
+Sign Up / Get Started section
+===========================-->
+<section class="pt-32 pb-20 sm:pt-36 md:pt-44 xl:pt-[180px] xl:pb-[100px]">
+  <div class="main-container">
+    <div class="space-y-[60px]">
+
+      <!-- heading -->
+      <div class="mx-auto max-w-[620px] space-y-3 text-center">
+        <span data-ns-animate data-delay="0.1" class="badge badge-yellow-v2">14-day free trial · No credit card required</span>
+        <h1 data-ns-animate data-delay="0.2" class="text-heading-3 md:text-heading-2">
+          Start your free trial.
+        </h1>
+        <p data-ns-animate data-delay="0.3">
+          Set up your Prime DQ Files account in minutes. Full access for 14 days — cancel anytime.
+        </p>
+      </div>
+
+      <!-- form card -->
+      <div
+        data-ns-animate
+        data-delay="0.4"
+        class="dark:bg-background-6 mx-auto w-full max-w-[720px] rounded-[28px] bg-white p-8 md:p-12 shadow-sm"
+      >
+        <form action="#" method="POST" class="space-y-7">
+
+          <!-- name + email -->
+          <div class="flex flex-col gap-7 md:flex-row">
+            <div class="flex-1 space-y-2">
+              <label for="fullname" class="text-tagline-2 text-secondary dark:text-accent block font-medium">Full name</label>
+              <input
+                type="text"
+                id="fullname"
+                name="fullname"
+                placeholder="Jane Smith"
+                required
+                autocomplete="name"
+                class="dark:border-stroke-7 dark:bg-background-6 border-stroke-3 bg-background-1 text-tagline-2 placeholder:text-secondary/40 focus:border-secondary placeholder:text-tagline-2 dark:placeholder:text-accent/40 dark:text-accent h-[48px] w-full rounded-full border px-5 py-3 font-normal focus:outline-none"
+              />
+            </div>
+            <div class="flex-1 space-y-2">
+              <label for="email" class="text-tagline-2 text-secondary dark:text-accent block font-medium">Work email</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="jane@yourcompany.com"
+                required
+                autocomplete="email"
+                class="dark:border-stroke-7 dark:bg-background-6 border-stroke-3 bg-background-1 text-tagline-2 placeholder:text-secondary/40 focus:border-secondary placeholder:text-tagline-2 dark:placeholder:text-accent/40 dark:text-accent h-[48px] w-full rounded-full border px-5 py-3 font-normal focus:outline-none"
+              />
+            </div>
+          </div>
+
+          <!-- subdomain -->
+          <div class="space-y-2">
+            <label for="subdomain" class="text-tagline-2 text-secondary dark:text-accent block font-medium">
+              Choose your subdomain
+            </label>
+            <div class="flex items-stretch rounded-full border border-stroke-3 dark:border-stroke-7 bg-background-1 dark:bg-background-6 overflow-hidden focus-within:border-secondary h-[48px]">
+              <input
+                type="text"
+                id="subdomain"
+                name="subdomain"
+                placeholder="yourcompany"
+                required
+                autocomplete="off"
+                pattern="[a-z0-9\-]+"
+                title="Lowercase letters, numbers, and hyphens only"
+                class="flex-1 bg-transparent text-tagline-2 placeholder:text-secondary/40 dark:placeholder:text-accent/40 dark:text-accent px-5 py-3 font-normal focus:outline-none min-w-0"
+              />
+              <span class="bg-background-3 dark:bg-background-5 text-secondary/60 dark:text-accent/60 text-tagline-2 px-5 flex items-center shrink-0 border-l border-stroke-3 dark:border-stroke-7 whitespace-nowrap">
+                .primedqfiles.com
+              </span>
+            </div>
+            <p class="text-tagline-2 text-secondary/40 dark:text-accent/40 px-2">
+              Your team will log in at <span class="text-secondary dark:text-accent font-medium" id="subdomain-preview">yourcompany.primedqfiles.com</span>
+            </p>
+          </div>
+
+          <!-- account type -->
+          <div class="space-y-3">
+            <p class="text-tagline-2 text-secondary dark:text-accent block font-medium">Account type</p>
+            <div class="grid grid-cols-2 gap-4">
+              <!-- company -->
+              <label for="type-company" class="cursor-pointer">
+                <input type="radio" id="type-company" name="account_type" value="company" class="peer sr-only" required checked />
+                <div class="peer-checked:border-secondary dark:peer-checked:border-accent peer-checked:bg-background-2 dark:peer-checked:bg-background-5 border-stroke-3 dark:border-stroke-7 bg-background-1 dark:bg-background-6 rounded-2xl border-2 p-5 transition-all duration-200 space-y-2">
+                  <span class="bg-secondary dark:bg-accent/10 rounded-full size-9 flex items-center justify-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="stroke-white dark:stroke-accent">
+                      <rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/>
+                    </svg>
+                  </span>
+                  <p class="text-tagline-1 font-medium text-secondary dark:text-accent">Carrier / Fleet</p>
+                  <p class="text-tagline-2 text-secondary/60 dark:text-accent/60">Manage your own drivers and DQFs under one carrier account.</p>
+                </div>
+              </label>
+
+              <!-- reseller -->
+              <label for="type-reseller" class="cursor-pointer">
+                <input type="radio" id="type-reseller" name="account_type" value="reseller" class="peer sr-only" />
+                <div class="peer-checked:border-secondary dark:peer-checked:border-accent peer-checked:bg-background-2 dark:peer-checked:bg-background-5 border-stroke-3 dark:border-stroke-7 bg-background-1 dark:bg-background-6 rounded-2xl border-2 p-5 transition-all duration-200 space-y-2">
+                  <span class="bg-secondary dark:bg-accent/10 rounded-full size-9 flex items-center justify-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="stroke-white dark:stroke-accent">
+                      <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                    </svg>
+                  </span>
+                  <p class="text-tagline-1 font-medium text-secondary dark:text-accent">Reseller / Agency</p>
+                  <p class="text-tagline-2 text-secondary/60 dark:text-accent/60">Manage multiple carrier accounts for clients from one login.</p>
+                </div>
+              </label>
+            </div>
+          </div>
+
+          <!-- terms -->
+          <fieldset class="flex items-start gap-3">
+            <label for="terms" class="flex items-center gap-3 cursor-pointer">
+              <input id="terms" type="checkbox" class="peer sr-only" required />
+              <span class="border-stroke-3 dark:border-stroke-7 after:bg-secondary dark:after:bg-accent peer-checked:border-secondary dark:peer-checked:border-accent relative mt-0.5 size-4 shrink-0 cursor-pointer rounded-full border after:absolute after:top-1/2 after:left-1/2 after:size-2.5 after:-translate-x-1/2 after:-translate-y-1/2 after:rounded-full after:opacity-0 peer-checked:after:opacity-100"></span>
+            </label>
+            <label for="terms" class="text-tagline-2 text-secondary/60 dark:text-accent/60 cursor-pointer leading-relaxed">
+              I agree to the <a href="#" class="text-secondary dark:text-accent underline underline-offset-2">Terms &amp; Conditions</a> and <a href="#" class="text-secondary dark:text-accent underline underline-offset-2">Privacy Policy</a>.
+            </label>
+          </fieldset>
+
+          <!-- submit -->
+          <button type="submit" class="btn btn-primary btn-lg w-full">
+            <span>Create my account</span>
+          </button>
+
+          <p class="text-center text-tagline-2 text-secondary/40 dark:text-accent/40">
+            Already have an account? <a href="#" class="text-secondary dark:text-accent underline underline-offset-2">Sign in</a>
+          </p>
+        </form>
+      </div>
+
+      <!-- trust signals -->
+      <ul class="flex flex-wrap items-center justify-center gap-x-10 gap-y-4" data-ns-animate data-delay="0.5">
+        <li class="flex items-center gap-2.5">
+          <span class="bg-secondary dark:bg-accent/10 rounded-full size-[18px] shrink-0 flex items-center justify-center">
+            <svg xmlns="http://www.w3.org/2000/svg" width="10" height="8" viewBox="0 0 10 8" fill="none" class="shrink-0"><path d="M4.31661 7.25605L9.74905 1.92144C10.0836 1.5959 10.0836 1.0697 9.74905 0.744158C9.41446 0.418614 8.87363 0.418614 8.53904 0.744158L3.7116 5.49012L1.46096 3.28807C1.12636 2.96253 0.585538 2.96253 0.250945 3.28807C-0.0836483 3.61362 -0.0836483 4.13982 0.250945 4.46536L3.1066 7.25605C3.27347 7.41841 3.49253 7.5 3.7116 7.5C3.93067 7.5 4.14974 7.41841 4.31661 7.25605Z" fill="white" /></svg>
+          </span>
+          <span class="text-tagline-2 text-secondary/60 dark:text-accent/60">No credit card required</span>
+        </li>
+        <li class="flex items-center gap-2.5">
+          <span class="bg-secondary dark:bg-accent/10 rounded-full size-[18px] shrink-0 flex items-center justify-center">
+            <svg xmlns="http://www.w3.org/2000/svg" width="10" height="8" viewBox="0 0 10 8" fill="none" class="shrink-0"><path d="M4.31661 7.25605L9.74905 1.92144C10.0836 1.5959 10.0836 1.0697 9.74905 0.744158C9.41446 0.418614 8.87363 0.418614 8.53904 0.744158L3.7116 5.49012L1.46096 3.28807C1.12636 2.96253 0.585538 2.96253 0.250945 3.28807C-0.0836483 3.61362 -0.0836483 4.13982 0.250945 4.46536L3.1066 7.25605C3.27347 7.41841 3.49253 7.5 3.7116 7.5C3.93067 7.5 4.14974 7.41841 4.31661 7.25605Z" fill="white" /></svg>
+          </span>
+          <span class="text-tagline-2 text-secondary/60 dark:text-accent/60">Full access for 14 days</span>
+        </li>
+        <li class="flex items-center gap-2.5">
+          <span class="bg-secondary dark:bg-accent/10 rounded-full size-[18px] shrink-0 flex items-center justify-center">
+            <svg xmlns="http://www.w3.org/2000/svg" width="10" height="8" viewBox="0 0 10 8" fill="none" class="shrink-0"><path d="M4.31661 7.25605L9.74905 1.92144C10.0836 1.5959 10.0836 1.0697 9.74905 0.744158C9.41446 0.418614 8.87363 0.418614 8.53904 0.744158L3.7116 5.49012L1.46096 3.28807C1.12636 2.96253 0.585538 2.96253 0.250945 3.28807C-0.0836483 3.61362 -0.0836483 4.13982 0.250945 4.46536L3.1066 7.25605C3.27347 7.41841 3.49253 7.5 3.7116 7.5C3.93067 7.5 4.14974 7.41841 4.31661 7.25605Z" fill="white" /></svg>
+          </span>
+          <span class="text-tagline-2 text-secondary/60 dark:text-accent/60">SOC 2 compliant</span>
+        </li>
+        <li class="flex items-center gap-2.5">
+          <span class="bg-secondary dark:bg-accent/10 rounded-full size-[18px] shrink-0 flex items-center justify-center">
+            <svg xmlns="http://www.w3.org/2000/svg" width="10" height="8" viewBox="0 0 10 8" fill="none" class="shrink-0"><path d="M4.31661 7.25605L9.74905 1.92144C10.0836 1.5959 10.0836 1.0697 9.74905 0.744158C9.41446 0.418614 8.87363 0.418614 8.53904 0.744158L3.7116 5.49012L1.46096 3.28807C1.12636 2.96253 0.585538 2.96253 0.250945 3.28807C-0.0836483 3.61362 -0.0836483 4.13982 0.250945 4.46536L3.1066 7.25605C3.27347 7.41841 3.49253 7.5 3.7116 7.5C3.93067 7.5 4.14974 7.41841 4.31661 7.25605Z" fill="white" /></svg>
+          </span>
+          <span class="text-tagline-2 text-secondary/60 dark:text-accent/60">Cancel anytime</span>
+        </li>
+      </ul>
+
+    </div>
+  </div>
+</section>
+
+<!-- live subdomain preview script -->
+<script>
+  (function () {
+    var input = document.getElementById('subdomain');
+    var preview = document.getElementById('subdomain-preview');
+    if (!input || !preview) return;
+    input.addEventListener('input', function () {
+      var val = input.value.trim().toLowerCase().replace(/[^a-z0-9-]/g, '');
+      preview.textContent = (val || 'yourcompany') + '.primedqfiles.com';
+    });
+  })();
+</script>
