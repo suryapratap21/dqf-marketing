@@ -33,7 +33,7 @@ Hero section
           Trusted by 500+ fleets &amp; carriers nationwide
         </span>
       </div>
-      <div class="mb-14 text-center">
+      <div class="mb-8 text-center">
         <h1 data-ns-animate data-delay="0.2" class="opacity-0 mb-4">
           Hire compliant drivers. Close DQFs in days, not weeks.
         </h1>
@@ -43,23 +43,42 @@ Hero section
           chasing paperwork.
         </p>
       </div>
-      <form data-ns-animate data-delay="0.4" class="opacity-0" action="./get-started.html" method="GET">
-        <div class="flex max-sm:flex-col max-sm:gap-y-5 w-full justify-center items-center gap-x-3">
-          <input
-            id="cta-email"
-            type="email"
-            placeholder="Enter your work email"
-            autocomplete="email"
-            class="bg-background-1 dark:bg-background-6 min-w-[325px] sm:min-w-[340px] placeholder:text-secondary/40 dark:placeholder:text-white/40 text-secondary/60 text-tagline-1 focus:outline-none font-normal border border-stroke-3 rounded-[360px] dark:bg-dark-200 dark:border-[#31332F] focus:border-primary-500 dark:focus:border-primary-500 px-[18px] py-3 duration-300 transition-all outline-none h-12 placeholder:font-normal"
-          />
-          <button
-            type="submit"
-            class="btn btn-primary hover:btn-secondary dark:hover:btn-accent btn-md h-12 max-sm:w-full"
-          >
-            <span>Start free trial</span>
-          </button>
-        </div>
-      </form>
+      <!-- Feature checkmarks -->
+      <ul data-ns-animate data-delay="0.4" class="opacity-0 flex flex-wrap items-center justify-center gap-5 md:gap-9 mb-8">
+        <li class="flex items-center gap-2">
+          <span class="inline-flex size-[18px] items-center justify-center rounded-full bg-secondary/10 dark:bg-accent/20 shrink-0">
+            <svg xmlns="http://www.w3.org/2000/svg" width="11" height="8" viewBox="0 0 11 8" fill="none">
+              <path d="M4.81661 7.25605L10.2491 1.92144C10.5836 1.5959 10.5836 1.0697 10.2491 0.744158C9.91446 0.418614 9.37363 0.418614 9.03904 0.744158L4.2116 5.49012L1.96096 3.28807C1.62636 2.96253 1.08554 2.96253 0.750945 3.28807C0.416352 3.61362 0.416352 4.13982 0.750945 4.46536L3.6066 7.25605C3.77347 7.41841 3.99253 7.5 4.2116 7.5C4.43067 7.5 4.64974 7.41841 4.81661 7.25605Z" class="fill-secondary dark:fill-accent" />
+            </svg>
+          </span>
+          <span class="text-tagline-2 text-secondary/70 dark:text-accent/60">DOT-compliant DQF automation</span>
+        </li>
+        <li class="flex items-center gap-2">
+          <span class="inline-flex size-[18px] items-center justify-center rounded-full bg-secondary/10 dark:bg-accent/20 shrink-0">
+            <svg xmlns="http://www.w3.org/2000/svg" width="11" height="8" viewBox="0 0 11 8" fill="none">
+              <path d="M4.81661 7.25605L10.2491 1.92144C10.5836 1.5959 10.5836 1.0697 10.2491 0.744158C9.91446 0.418614 9.37363 0.418614 9.03904 0.744158L4.2116 5.49012L1.96096 3.28807C1.62636 2.96253 1.08554 2.96253 0.750945 3.28807C0.416352 3.61362 0.416352 4.13982 0.750945 4.46536L3.6066 7.25605C3.77347 7.41841 3.99253 7.5 4.2116 7.5C4.43067 7.5 4.64974 7.41841 4.81661 7.25605Z" class="fill-secondary dark:fill-accent" />
+            </svg>
+          </span>
+          <span class="text-tagline-2 text-secondary/70 dark:text-accent/60">MVR · PSP · CDLIS · Clearinghouse</span>
+        </li>
+        <li class="flex items-center gap-2">
+          <span class="inline-flex size-[18px] items-center justify-center rounded-full bg-secondary/10 dark:bg-accent/20 shrink-0">
+            <svg xmlns="http://www.w3.org/2000/svg" width="11" height="8" viewBox="0 0 11 8" fill="none">
+              <path d="M4.81661 7.25605L10.2491 1.92144C10.5836 1.5959 10.5836 1.0697 10.2491 0.744158C9.91446 0.418614 9.37363 0.418614 9.03904 0.744158L4.2116 5.49012L1.96096 3.28807C1.62636 2.96253 1.08554 2.96253 0.750945 3.28807C0.416352 3.61362 0.416352 4.13982 0.750945 4.46536L3.6066 7.25605C3.77347 7.41841 3.99253 7.5 4.2116 7.5C4.43067 7.5 4.64974 7.41841 4.81661 7.25605Z" class="fill-secondary dark:fill-accent" />
+            </svg>
+          </span>
+          <span class="text-tagline-2 text-secondary/70 dark:text-accent/60">Audit-ready in hours, not weeks</span>
+        </li>
+      </ul>
+      <!-- CTA Buttons -->
+      <div data-ns-animate data-delay="0.5" class="opacity-0 flex flex-wrap items-center justify-center gap-4">
+        <a href="./get-started.html" class="btn btn-primary hover:btn-secondary dark:hover:btn-accent btn-xl">
+          <span>Start free trial</span>
+        </a>
+        <a href="./features.html#features-grid" class="btn btn-secondary hover:btn-primary dark:btn-accent btn-xl">
+          <span>See how it works</span>
+        </a>
+      </div>
     </div>
     <div class="flex flex-col lg:flex-row gap-8 mb-8">
       <div
@@ -68,52 +87,49 @@ Hero section
         data-instant="true"
         class="opacity-0 lg:flex-1/3 flex flex-col p-6 bg-background-2 dark:bg-background-6 backdrop-blur-[20px] rounded-[20px]"
       >
-        <div class="flex items-center justify-between mb-5">
-          <h5 class="text-secondary dark:text-accent">DQF Checklist</h5>
-          <span class="text-xs font-medium px-2.5 py-1 rounded-full bg-ns-cyan/20 text-ns-cyan">7 of 7 Complete</span>
+        <div class="flex items-center justify-between mb-.5">
+          <h5 class="text-secondary dark:text-accent">Driver Profile</h5>
+          <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M2.71667 10.9994C2.71667 6.84085 5.95773 2.71277 11.0033 2.71277C15.0782 2.71277 17.0922 5.72885 17.9505 7.3328H15.4034C14.9984 7.3328 14.67 7.66112 14.67 8.06613C14.67 8.47113 14.9984 8.79946 15.4034 8.79946H19.8034C20.2083 8.79946 20.5367 8.47113 20.5367 8.06613V3.66613C20.5367 3.26112 20.2083 2.9328 19.8034 2.9328C19.3984 2.9328 19.07 3.26112 19.07 3.66613V6.32546C18.0368 4.50398 15.6467 1.24609 11.0033 1.24609C5.04454 1.24609 1.25 6.138 1.25 10.9994C1.25 15.8609 5.04454 20.7528 11.0033 20.7528C13.8543 20.7528 16.2279 19.6246 17.918 17.9051C18.8229 16.9843 19.5295 15.8967 20.0113 14.7258C20.1655 14.3513 19.9868 13.9227 19.6124 13.7686C19.2378 13.6145 18.8093 13.7931 18.6551 14.1677C18.2433 15.1685 17.6402 16.0954 16.8719 16.877C15.4466 18.3274 13.4454 19.2861 11.0033 19.2861C5.95773 19.2861 2.71667 15.158 2.71667 10.9994Z" fill="" fill-opacity="0.2" class="fill-secondary dark:fill-accent" />
+          </svg>
         </div>
-        <div class="flex flex-col gap-3 flex-1">
-          <div class="flex items-center gap-3 p-3 bg-background-1 dark:bg-background-7 rounded-xl">
-            <div class="flex items-center justify-center size-7 rounded-full bg-ns-cyan/15 shrink-0">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M20 6L9 17L4 12" stroke="#83E7EE" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            </div>
-            <span class="text-tagline-2 text-secondary dark:text-accent">Driver Application</span>
+        <div class="relative w-[176px] h-[176px] rounded-full mx-auto z-10 overflow-hidden flex items-center justify-center p-2.5 mb-4">
+          <figure class="absolute top-[-82%] size-[320px] overflow-hidden select-none pointer-events-none">
+            <img src="./images/ns-img-496.png" alt="hero-avatar-ring" class="size-full object-cover" />
+          </figure>
+          <figure class="w-[156px] h-[156px] relative z-20 overflow-hidden rounded-full mx-auto bg-white">
+            <img src="./images/ns-avatar-1.png" alt="driver profile" />
+          </figure>
+        </div>
+        <div class="text-center mb-16">
+          <h4 class="mb-1 text-secondary dark:text-accent">Marcus Williams</h4>
+          <p class="text-tagline-1">CDL-A Driver Applicant</p>
+        </div>
+        <div class="flex max-sm:flex-wrap items-center justify-center gap-4 sm:gap-y-0 sm:gap-x-2.5 md:gap-x-8 lg:gap-x-16">
+          <div class="flex items-center gap-2 bg-background-1 dark:bg-background-7 rounded-lg py-2 px-6">
+            <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M8.75 15C11.4424 15 13.625 12.8174 13.625 10.125C13.625 7.43261 11.4424 5.25 8.75 5.25C6.05761 5.25 3.875 7.43261 3.875 10.125C3.875 12.8174 6.05761 15 8.75 15Z" stroke="#83E7EE" stroke-width="2" stroke-miterlimit="10" />
+              <path d="M15.0703 5.43076C15.7408 5.24184 16.4441 5.1988 17.1326 5.30454C17.8212 5.41029 18.4791 5.66236 19.062 6.04377C19.6449 6.42519 20.1393 6.92709 20.512 7.51568C20.8846 8.10427 21.1268 8.76588 21.2221 9.45594C21.3175 10.146 21.264 10.8485 21.065 11.5161C20.866 12.1837 20.5263 12.8009 20.0687 13.3262C19.6111 13.8514 19.0463 14.2726 18.4123 14.5611C17.7782 14.8497 17.0897 14.9991 16.3931 14.9992" stroke="#83E7EE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M2 18.5059C2.76138 17.4229 3.77215 16.539 4.94698 15.9288C6.12182 15.3186 7.42623 15.0001 8.75008 15C10.0739 14.9999 11.3784 15.3184 12.5532 15.9285C13.7281 16.5386 14.739 17.4225 15.5004 18.5054" stroke="#83E7EE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M16.3906 15C17.7146 14.999 19.0193 15.3171 20.1943 15.9273C21.3693 16.5375 22.3799 17.4218 23.1407 18.5054" stroke="#83E7EE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+            <h6 class="text-secondary dark:text-accent">MVR</h6>
           </div>
-          <div class="flex items-center gap-3 p-3 bg-background-1 dark:bg-background-7 rounded-xl">
-            <div class="flex items-center justify-center size-7 rounded-full bg-ns-cyan/15 shrink-0">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M20 6L9 17L4 12" stroke="#83E7EE" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            </div>
-            <span class="text-tagline-2 text-secondary dark:text-accent">MVR Report</span>
+          <div class="flex items-center gap-2 bg-background-1 dark:bg-background-7 rounded-lg py-2 px-6">
+            <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M16.625 9.75L11.125 15L8.375 12.375" stroke="#83E7EE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M12.5 21C17.4706 21 21.5 16.9706 21.5 12C21.5 7.02944 17.4706 3 12.5 3C7.52944 3 3.5 7.02944 3.5 12C3.5 16.9706 7.52944 21 12.5 21Z" stroke="#83E7EE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+            <h6 class="text-secondary dark:text-accent">A-Tier</h6>
           </div>
-          <div class="flex items-center gap-3 p-3 bg-background-1 dark:bg-background-7 rounded-xl">
-            <div class="flex items-center justify-center size-7 rounded-full bg-ns-cyan/15 shrink-0">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M20 6L9 17L4 12" stroke="#83E7EE" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            </div>
-            <span class="text-tagline-2 text-secondary dark:text-accent">PSP Report</span>
-          </div>
-          <div class="flex items-center gap-3 p-3 bg-background-1 dark:bg-background-7 rounded-xl">
-            <div class="flex items-center justify-center size-7 rounded-full bg-ns-cyan/15 shrink-0">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M20 6L9 17L4 12" stroke="#83E7EE" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            </div>
-            <span class="text-tagline-2 text-secondary dark:text-accent">DOT Medical Certificate</span>
-          </div>
-          <div class="flex items-center gap-3 p-3 bg-background-1 dark:bg-background-7 rounded-xl">
-            <div class="flex items-center justify-center size-7 rounded-full bg-ns-cyan/15 shrink-0">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M20 6L9 17L4 12" stroke="#83E7EE" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            </div>
-            <span class="text-tagline-2 text-secondary dark:text-accent">Road Test Certificate</span>
-          </div>
-          <div class="flex items-center gap-3 p-3 bg-background-1 dark:bg-background-7 rounded-xl">
-            <div class="flex items-center justify-center size-7 rounded-full bg-ns-cyan/15 shrink-0">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M20 6L9 17L4 12" stroke="#83E7EE" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            </div>
-            <span class="text-tagline-2 text-secondary dark:text-accent">Employment History (3 yr)</span>
-          </div>
-          <div class="flex items-center gap-3 p-3 bg-background-1 dark:bg-background-7 rounded-xl">
-            <div class="flex items-center justify-center size-7 rounded-full bg-ns-cyan/15 shrink-0">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M20 6L9 17L4 12" stroke="#83E7EE" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            </div>
-            <span class="text-tagline-2 text-secondary dark:text-accent">Clearinghouse Query</span>
+          <div class="flex items-center gap-2 bg-background-1 dark:bg-background-7 rounded-lg py-2 px-6">
+            <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0_hero_dqf)">
+                <path d="M12.4989 0.5L16.7249 6.683L23.9119 8.792L19.3369 14.722L19.5519 22.208L12.4989 19.69L5.44594 22.208L5.66094 14.722L1.08594 8.792L8.27294 6.683L12.4989 0.5ZM12.4989 4.044L9.52094 8.402L4.45594 9.887L7.68094 14.065L7.52794 19.34L12.4989 17.566L17.4689 19.34L17.3169 14.065L20.5409 9.887L15.4769 8.402L12.4989 4.044ZM10.4989 12C10.4989 12.5304 10.7097 13.0391 11.0847 13.4142C11.4598 13.7893 11.9685 14 12.4989 14C13.0294 14 13.5381 13.7893 13.9132 13.4142C14.2882 13.0391 14.4989 12.5304 14.4989 12H16.4989C16.4989 13.0609 16.0775 14.0783 15.3274 14.8284C14.5772 15.5786 13.5598 16 12.4989 16C11.4381 16 10.4207 15.5786 9.67051 14.8284C8.92036 14.0783 8.49894 13.0609 8.49894 12H10.4989Z" fill="#83E7EE" />
+              </g>
+              <defs><clipPath id="clip0_hero_dqf"><rect width="24" height="24" fill="white" transform="translate(0.5)" /></clipPath></defs>
+            </svg>
+            <h6 class="text-secondary dark:text-accent">DOT</h6>
           </div>
         </div>
       </div>
